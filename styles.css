@@ -28,7 +28,7 @@ h1 {
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    margin: 2rem auto 1rem auto;
+    margin: 1rem auto 1rem auto;
     padding: 3rem;
     background-color: #ffffff;
     border: 1px solid #ddd;
