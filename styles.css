@@ -1,50 +1,159 @@
-body {
+/* 1. Reset or normalize some default browser styles */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
+/* 2. Body and overall page styling */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #f8f9fa, #ffffff);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. Page heading */
 h1 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    color: #34495e;
 }
 
+/* 4. Form styling: container as a 'card' */
 #client-form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 500px;
+    margin: 2rem auto 1rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
 }
 
-label {
-    margin-top: 10px;
+/* 5. Labels */
+#client-form label {
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #444;
 }
 
-input {
-    padding: 8px;
-    margin-top: 5px;
+/* 6. Inputs */
+#client-form input[type="text"],
+#client-form input[type="tel"],
+#client-form input[type="email"] {
+    margin-top: 0.5rem;
+    padding: 0.6rem;
     font-size: 1rem;
-}
-
-#submit-button {
-    margin: 20px 0;
-    padding: 10px;
-    background-color: #4caf50;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-}
-
-#contact-list {
-    display: flex;
-    margin: 0 auto;
-    padding: 30px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    transition: border-color 0.2s ease;
 }
 
+/* Slight highlight on focus */
+#client-form input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* 7. Submit button styling */
+#submit-button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #3498db;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#submit-button:hover {
+    background-color: #2980b9;
+}
+
+/* 8. Contact List Container */
+#contact-list {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* 9. Table styling */
+.contacts-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    overflow: hidden; /* helps keep table corners rounded if needed */
+}
+
+/* Table header */
+.contacts-table thead {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.contacts-table th,
+.contacts-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.contacts-table th {
+    font-weight: 600;
+}
+
+.contacts-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* 10. Actions buttons (e.g., Delete) */
+.contacts-table button.delete-btn {
+    padding: 0.4rem 0.8rem;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.contacts-table button.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* 11. No contacts message */
 #contact-list p {
-    padding: 5px 0;
-    border: 5px solid #eee;
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* 12. Responsive Design */
+@media (max-width: 600px) {
+    #client-form {
+        width: 90%;
+    }
+
+    .contacts-table th,
+    .contacts-table td {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    #submit-button {
+        font-size: 0.95rem;
+    }
 }
