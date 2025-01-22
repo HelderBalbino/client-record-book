@@ -134,9 +134,9 @@ h1 {
     background-color: #c0392b;
 }
 
-/* 11. No contacts message */
+/* 11. No contacts found message */
 #contact-list p {
-    font-size: 1rem;
+    font-size: 2rem;
     color: #666;
     text-align: center;
     margin-top: 1rem;

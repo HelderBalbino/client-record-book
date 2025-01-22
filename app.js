@@ -74,7 +74,7 @@ function showContacts() {
         <td>${contact.phone}</td>
         <td>${contact.email}</td>
         <td>${contact.note}</td>
-        <!-- Example: a delete button -->
+        // create a button for deleting the contact
         <button class="delete-btn" data-index="${index}">Delete</button>
         </td>
     `;
