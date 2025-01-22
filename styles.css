@@ -46,7 +46,8 @@ h1 {
 /* 6. Inputs */
 #client-form input[type="text"],
 #client-form input[type="tel"],
-#client-form input[type="email"] {
+#client-form input[type="email"],
+#client-form input[type="text"] {
     margin-top: 0.5rem;
     padding: 0.6rem;
     font-size: 1rem;

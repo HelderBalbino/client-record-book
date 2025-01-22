@@ -14,11 +14,13 @@ function addContact(event) {
     const name = document.getElementById("name").value;
     const phone = document.getElementById("phone").value;
     const email = document.getElementById("email").value;
+    const note = document.getElementById("notes").value;
 
     const contact = {
         name,
         phone,
         email,
+        note,
     };
 
     // Add the new contact to the array
@@ -54,6 +56,7 @@ function showContacts() {
         <th>Name</th>
         <th>Phone</th>
         <th>Email</th>
+        <th>Notes</th>
         <th>Actions</th>
         </tr>  
     </thead>
@@ -70,7 +73,7 @@ function showContacts() {
         <td>${contact.name}</td>
         <td>${contact.phone}</td>
         <td>${contact.email}</td>
-        <td>
+        <td>${contact.note}</td>
         <!-- Example: a delete button -->
         <button class="delete-btn" data-index="${index}">Delete</button>
         </td>
