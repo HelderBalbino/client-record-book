@@ -27,7 +27,7 @@ h1 {
 #client-form {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 600px;
     margin: 2rem auto 1rem auto;
     padding: 3rem;
     background-color: #ffffff;
