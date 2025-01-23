@@ -1,11 +1,11 @@
-/* 1. Reset or normalize some default browser styles */
+/* Reset or normalize some default browser styles */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-/* 2. Body and overall page styling */
+/* Body and overall page styling */
 body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	background: linear-gradient(to bottom right, #f8f9fa, #ffffff);
@@ -15,7 +15,7 @@ body {
 	flex-direction: column;
 }
 
-/* 3. Page heading */
+/* Page heading */
 h1 {
 	text-align: center;
 	margin-top: 1.5rem;
@@ -23,7 +23,7 @@ h1 {
 	color: #34495e;
 }
 
-/* 4. Form styling: container as a 'card' */
+/* Form styling: container as a 'card' */
 #client-form {
 	display: flex;
 	flex-direction: column;
@@ -36,14 +36,14 @@ h1 {
 	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* 5. Labels */
+/* Labels */
 #client-form label {
 	margin-top: 1rem;
 	font-weight: 500;
 	color: #444;
 }
 
-/* 6. Inputs */
+/* Inputs */
 #client-form input[type='text'],
 #client-form input[type='tel'],
 #client-form input[type='email'],
@@ -62,7 +62,7 @@ h1 {
 	border-color: #3498db;
 }
 
-/* 7. Submit button styling */
+/* Submit button styling */
 #submit-button {
 	margin-top: 1.5rem;
 	padding: 0.75rem;
@@ -80,14 +80,14 @@ h1 {
 	background-color: #2980b9;
 }
 
-/* 8. Contact List Container */
+/* Contact List Container */
 #contact-list {
 	max-width: 700px;
 	margin: 0 auto;
 	padding: 1rem;
 }
 
-/* 9. Table styling */
+/* Table styling */
 .contacts-table {
 	width: 100%;
 	border-collapse: collapse;
@@ -118,7 +118,7 @@ h1 {
 	border-bottom: none;
 }
 
-/* 10. Actions buttons (e.g., Delete) */
+/* Actions buttons (e.g., Delete) */
 .contacts-table button.delete-btn {
 	padding: 0.4rem 0.8rem;
 	background-color: #e74c3c;
@@ -134,7 +134,7 @@ h1 {
 	background-color: #c0392b;
 }
 
-/* 11. No contacts found message */
+/* No contacts found message */
 #contact-list p {
 	font-size: 2rem;
 	color: #666;
@@ -142,7 +142,7 @@ h1 {
 	margin-top: 1rem;
 }
 
-/* 12. Responsive Design */
+/* Responsive Design */
 @media (max-width: 600px) {
 	#client-form {
 		width: 90%;
